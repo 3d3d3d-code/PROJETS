@@ -4,7 +4,7 @@
 
 <head>
 
-  <title><?= ucfirst($page) ?> - mon site !</title
+  <title><?= ucfirst($page) ?> - mon site !</title>
 </head>
 <body>
 
