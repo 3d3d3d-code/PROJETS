@@ -9,12 +9,13 @@ if(isset($_GET['page']) AND !empty($_GET['page'])){
 }
 //toutes pages possibles seront dans le dossiers controllers(array contenant toutes les pages)
 
-$allpages = scandir('controllers/');
+$allpages = scandir('controllers/'); //va scanner toutes les pages
 
 
-if (in_array($_page.'_controller.php',$allpages)){
-    include_once 'models/'.$page.'_model.php';
-    include_once'controllers/' .page.'_controller.php';
+
+if (in_array($page.'contact_controller.php',$allpages)){
+    include_once 'models/'.$page.'contact_model.php';
+    include_once'controllers/'. $page.'contact_controller.php';
     include_once 'views/'.$page.'_view.php';
     //inclusion de la page
 }else{
